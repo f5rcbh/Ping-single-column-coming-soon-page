@@ -1,6 +1,9 @@
-@forward 'global'; 
+@forward 'global';
 @use './fonts/color' as color;
 @use './fonts/text' as text;
-@use './layouts/center' as layout ;
+@use './layouts/center' as layout;
 
 
+header {
+    text-align: center;
+}
