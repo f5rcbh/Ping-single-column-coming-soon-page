@@ -6,13 +6,75 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display: grid;
+  place-items: center;
   min-height: 100vh;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+body img {
+  width: 50rem;
 }
 
 header {
-  text-align: center;
+  margin-top: 1rem;
+  display: grid;
+  grid-row-gap: 1rem;
+}
+header h1 {
+  font-size: 3rem;
+  margin-top: 2rem;
+  font-weight: 300;
+  color: hsl(0deg, 0%, 59%);
+}
+header h1 span {
+  font-weight: 700;
+  color: hsl(209deg, 33%, 12%);
+}
+header p {
+  font-size: 20px;
+  font-weight: 300;
+}
+header input, header button {
+  border: none;
+  background: none;
+  outline: none;
+  margin-inline: 0.5rem;
+}
+header input {
+  margin-top: 1rem;
+  border: 1px solid hsl(223deg, 100%, 88%);
+  outline: none;
+  border-radius: 30px;
+  width: 20rem;
+  padding: 1rem;
+}
+header input::-moz-placeholder {
+  color: hsl(0deg, 0%, 59%);
+}
+header input:-ms-input-placeholder {
+  color: hsl(0deg, 0%, 59%);
+}
+header input::placeholder {
+  color: hsl(0deg, 0%, 59%);
+}
+header button {
+  background-color: hsl(223deg, 87%, 63%);
+  padding: 1rem;
+  width: 10rem;
+  color: #fff;
+  border-radius: 30px;
+  box-shadow: 12px 16px 37px -8px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  display: grid;
+}
+footer .svg {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.5rem;
+}
+footer .svg .facebook {
+  border-radius: 20px;
 }/*# sourceMappingURL=style.css.map */

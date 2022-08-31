@@ -1,3 +1,7 @@
+@use '../layouts/center' as layout;
+@use '../fonts/text' as text;
+
+
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
 
 *,*::after,*::before{
@@ -7,10 +11,12 @@
 }
 
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include layout.Grid;
     min-height: 100vh;
+    text-align: center;
+    font-family: text.$family;
+    img{
+        width: 50rem;
+    }
 }
 

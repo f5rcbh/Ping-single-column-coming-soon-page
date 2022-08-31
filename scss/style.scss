@@ -4,6 +4,59 @@
 @use './layouts/center' as layout;
 
 
-header {
-    text-align: center;
+header{
+    margin-top: 1rem;
+    display: grid;
+    grid-row-gap: 1rem;
+    h1{
+        font-size: 3rem;
+        margin-top: 2rem;
+        font-weight: 300;
+        color: color.$Gray;
+        span{
+            font-weight: 700;
+            color: color.$darkBlue;
+        }
+    }
+    p{
+        font-size: text.$size;
+        font-weight: 300;
+        
+    }
+    input,button{
+        border: none;
+        background: none;
+        outline: none;
+        margin-inline:.5rem;
+    }
+    input{
+        margin-top: 1rem;
+        border: 1px solid color.$paleBlue;
+        outline: none;
+        border-radius: 30px;
+        width: 20rem;
+        padding:1rem ;
+        &::placeholder{
+            color: color.$Gray;
+        }
+    }
+    button{
+        background-color: color.$Blue;
+        padding: 1rem;
+        width: 10rem;
+        color: #fff;
+        border-radius: 30px;
+        box-shadow: 12px 16px 37px -8px rgba(0,0,0,.50);
+    }
+}
+footer{
+    display: grid;
+    .svg{
+        display: flex;
+        justify-content: space-around;
+        margin: .5rem;
+        .facebook{
+           border-radius: 20px;
+        }
+    }
 }
