@@ -16,6 +16,13 @@ body img {
   width: 50rem;
 }
 
+@media (max-width: 700px) {
+  body {
+    margin: auto;
+    width: auto;
+  }
+}
+
 header {
   margin-top: 1rem;
   display: grid;
@@ -42,7 +49,7 @@ header input, header button {
   margin-inline: 0.5rem;
 }
 header input {
-  margin-top: 1rem;
+  margin-bottom: 0.5rem;
   border: 1px solid hsl(223deg, 100%, 88%);
   outline: none;
   border-radius: 30px;
@@ -50,21 +57,55 @@ header input {
   padding: 1rem;
 }
 header input::-moz-placeholder {
-  color: hsl(0deg, 0%, 59%);
+  color: hsl(223deg, 100%, 88%);
 }
 header input:-ms-input-placeholder {
-  color: hsl(0deg, 0%, 59%);
+  color: hsl(223deg, 100%, 88%);
 }
 header input::placeholder {
-  color: hsl(0deg, 0%, 59%);
+  color: hsl(223deg, 100%, 88%);
 }
 header button {
+  cursor: pointer;
   background-color: hsl(223deg, 87%, 63%);
   padding: 1rem;
   width: 10rem;
   color: #fff;
   border-radius: 30px;
   box-shadow: 12px 16px 37px -8px rgba(0, 0, 0, 0.5);
+  margin-bottom: auto;
+}
+@media (max-width: 700px) {
+  header button {
+    margin-top: 1rem;
+    width: 20rem;
+  }
+}
+header button:hover {
+  background-color: rgba(79, 125, 243, 0.788);
+}
+header form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 700px) {
+  header form {
+    flex-direction: column;
+  }
+}
+header form .email-section {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  margin: auto;
+}
+@media (max-width: 700px) {
+  main img {
+    width: 30rem;
+  }
 }
 
 footer {
@@ -75,6 +116,34 @@ footer .svg {
   justify-content: space-around;
   margin: 0.5rem;
 }
-footer .svg .facebook {
-  border-radius: 20px;
+footer .svg svg {
+  border: 1px solid rgba(133, 133, 133, 0.485);
+  border-radius: 50%;
+  padding: 10px;
+  fill: hsl(223deg, 87%, 63%);
+  cursor: pointer;
+  width: 50px;
+}
+footer .svg svg:hover {
+  fill: #fff;
+  background-color: hsl(223deg, 87%, 63%);
+}
+
+.error {
+  border-color: red;
+}
+
+#error {
+  display: none;
+  font-size: 12px;
+  float: left;
+  padding-left: 1rem;
+  color: red;
+}
+@media (max-width: 700px) {
+  #error {
+    float: unset;
+    margin: auto;
+    padding: unset;
+  }
 }/*# sourceMappingURL=style.css.map */
